@@ -53,7 +53,7 @@ http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
         <!-- 自动扫描注解方式配置的hibernate类文件 -->
         <property name="packagesToScan">
             <list>
-                <value>com.phn.model</value>
+                <value>com.li.model</value>
             </list>
         </property>
     </bean>
@@ -86,7 +86,7 @@ http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
         </tx:attributes>
     </tx:advice>
     <aop:config>
-        <aop:pointcut id="transactionPointcut" expression="execution(* com.phn.service..*Impl.*(..))" />
+        <aop:pointcut id="transactionPointcut" expression="execution(* com.li.service..*impl.*(..))" />
         <aop:advisor pointcut-ref="transactionPointcut" advice-ref="transactionAdvice" />
     </aop:config>
 </beans>

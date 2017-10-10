@@ -19,7 +19,7 @@ public class UserController {
 	@Resource
     private UserService userService;
     @ResponseBody
-    @RequestMapping(value="/login", method = RequestMethod.POST)
+    @RequestMapping(value="/login", method = RequestMethod.GET)
     public Map<String,Object> login( UserEntity user){
         Map<String,Object> map = new HashMap<String,Object>();
         //System.out.println(user.toString());

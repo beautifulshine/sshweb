@@ -1,18 +1,18 @@
 package com.li.model;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.hibernate.annotations.Entity;
 
 
 /**
  * @author ls
  */
-@Table(name="custom")
+@Table(name="student")
 @Entity
 public class UserEntity {
 	private int id;
