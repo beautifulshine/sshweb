@@ -65,7 +65,7 @@
     <filter-class>com.li.filter.LoginFilter</filter-class>
     <init-param>
         <param-name>passUrl</param-name>
-        <param-value>login.jsp;page2.jsp;</param-value>
+        <param-value>login.jsp;page2.jsp;success.jsp</param-value>
     </init-param>
   </filter>
   <filter-mapping>
